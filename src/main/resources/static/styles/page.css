@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Commissioner";
-    src: url(\fonts\Commissioner.ttf) format("truetype");
+    src: url(E:\Example\src\main\resources\static\fonts\Commissioner.ttf) format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -11,9 +11,13 @@
  html,
  body {
      height: 100%;
-     background: url(/images/background.jpg) no-repeat fixed left;
+     width: 100%;
+     background: url(http://localhost:8081/resources/static/images/background.jpg) no-repeat fixed left;
      background-size: cover;
      font-family: "Commissioner", sans-serif;
+     font-size: 150%;
+     word-break: break-all;
+
  }
  .wrapper {
      position: relative;

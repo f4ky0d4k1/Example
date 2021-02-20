@@ -31,5 +31,5 @@ public class MainController {
         model.addAttribute("author", author);
         return "page";
     }
-//<img th:src="@{/images/background.jpg}">
+
 }
