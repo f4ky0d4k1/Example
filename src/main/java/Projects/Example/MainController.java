@@ -17,16 +17,19 @@ public class MainController {
     @GetMapping("/{id}")
     public String blog(@PathVariable(value = "id") long id, Model model) {
 
-        String fullText;
+        String fullText = new String();
         String author = new String();
+        String title = new String();
         try {
             Post post = postRepository.findById(id).get();
+            title = post.getTitle();
             fullText = post.getFullText();
             author = post.getAuthor();
         }
         catch (Exception e) {
             fullText = "Ошибка запроса: " + String.valueOf(e);
         }
+        model.addAttribute("title", title);
         model.addAttribute("fullText", fullText);
         model.addAttribute("author", author);
         return "page";

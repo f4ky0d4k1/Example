@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link th:href="@{src/main/resources/static/styles/page.css}" rel="stylesheet" />
+    <link th:href="@{/styles/page.css}" rel="stylesheet"/>
 </head>
 <body>
-    <p th:text="${fullText}" />
+<div class="content">
+    <div class="title">
+        <p th:text="${title}"/>
+    </div>
+    <div class="fullText">
+        <p th:text="${fullText}"/>
+    </div>
+</div>
 <div class="footer">
-    <p th:text="${author}" />
+    <p th:text="${author}"/>
 </div>
 </body>
 </html>

@@ -1,35 +1,29 @@
 @font-face {
     font-family: "Commissioner";
-    src: url(E:\Example\src\main\resources\static\fonts\Commissioner.ttf) format("truetype");
+    src: url(/fonts/Commissioner.ttf) format("truetype");
     font-style: normal;
     font-weight: normal;
 }
-* {
-     margin: 0;
-     padding: 0;
- }
- html,
- body {
-     height: 100%;
-     width: 100%;
-     background: url(http://localhost:8081/resources/static/images/background.jpg) no-repeat fixed left;
-     background-size: cover;
-     font-family: "Commissioner", sans-serif;
-     font-size: 150%;
-     word-break: break-all;
 
- }
- .wrapper {
-     position: relative;
-     min-height: 100%;
- }
- .content {
-     padding-bottom: 90px;
- }
- .footer {
-     position: absolute;
-     left: 0;
-     bottom: 0;
-     width: 100%;
-     height: 110px;
- }
+body {
+    background: url(/images/background.jpg) no-repeat fixed left;
+    background-size: cover;
+    font-family: "Commissioner";
+    font-size: 150%;
+    word-break: break-all;
+    padding-left: 180px;
+    padding-right: 400px;
+    padding-top: 300px;
+}
+
+.content {
+
+    padding-bottom: 100px;
+}
+.footer {
+    position: fixed; /* Фиксированное положение */
+    bottom: 0; /* Левый нижний угол */
+    width: 100%;
+    padding-bottom: 30px;
+    background: inherit;
+}
